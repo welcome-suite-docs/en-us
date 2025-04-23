@@ -1,0 +1,461 @@
+:root {
+    --ledger-green: #00875A;
+    --ledger-dark: #004D34;
+    --ledger-light: #E3FCF2;
+    --ledger-gray: #F5F5F5;
+    --ledger-text: #2D3436;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    color: var(--ledger-text);
+    background-color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: 1000;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--ledger-text);
+    text-decoration: none;
+}
+
+.nav-links {
+    display: none;
+}
+
+/* Hero Section */
+.hero {
+    padding: 8rem 0 4rem;
+    background-color: var(--ledger-gray);
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.crypto-badge {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 2rem;
+}
+
+.crypto-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.hero h1 span {
+    color: var(--ledger-green);
+}
+
+.hero p {
+    font-size: 1.125rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background: var(--ledger-green);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background: var(--ledger-dark);
+}
+
+/* Partnership Section */
+.partnership {
+    padding: 4rem 0;
+    background: white;
+}
+
+.partner-content {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.partner-logo {
+    width: 120px;
+    height: 40px;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+}
+
+.partner-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.learn-more {
+    color: var(--ledger-green);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 2rem;
+    background: var(--ledger-light);
+    border-radius: 12px;
+}
+
+.stat-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+    color: #666;
+}
+
+/* Features Section */
+.features {
+    padding: 4rem 0;
+    background: #f1f1f1;
+
+}
+
+.features {
+    padding: 0.5em 3em
+
+}
+.features h2 {
+    text-align: center;
+    font-size: 45px;
+    padding-top: 10px;
+    margin-bottom: 3rem;
+}
+
+.features h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.features p{
+   font-family: Georgia, 'Times New Roman', Times, serif    ;
+}
+.features h2 span {
+    color: var(--ledger-green);
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 3rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.feature-card {
+    padding: 2rem;
+    background: var(--ledger-light);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.feature-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 1rem;
+    background: var(--ledger-green);
+    border-radius: 50%;
+}
+
+.feature-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* Calculator Section */
+.calculator {
+    padding: 4rem 0;
+    background: var(--ledger-gray);
+}
+
+.calculator h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.calculator > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 3rem;
+}
+
+.calculator-widget {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.current-apy,
+.eth-price {
+    margin-bottom: 1.5rem;
+}
+
+.current-apy span,
+.eth-price span {
+    color: #666;
+    font-size: 0.875rem;
+}
+
+.current-apy h3,
+.eth-price h3 {
+    font-size: 1.5rem;
+    margin-top: 0.25rem;
+}
+
+.input-group,
+.slider-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-group label,
+.slider-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #666;
+    font-size: 0.875rem;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.slider-labels {
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    font-size: 0.875rem;
+}
+
+.rewards-card {
+    background: var(--ledger-light);
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+.reward-amount {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.reward-usd,
+.reward-fee {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: #666;
+}
+
+/* How It Works Section */
+.how-it-works {
+    padding: 4rem 0;
+    background: white;
+}
+
+.steps-content {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.steps-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.steps-content h2 span {
+    color: var(--ledger-green);
+}
+
+.guide-button {
+    display: inline-block;
+    background: var(--ledger-green);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 2rem 0;
+}
+
+.steps-list {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.step-number {
+    width: 32px;
+    height: 32px;
+    background: var(--ledger-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    color: var(--ledger-green);
+    font-weight: 500;
+}
+
+.device-image {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 2rem;
+}
+
+/* Footer */
+.footer {
+    background: var(--ledger-dark);
+    color: white;
+    padding: 4rem 0;
+}
+
+.footer-content {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.footer-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .nav-links {
+        display: flex;
+        gap: 2rem;
+    }
+    
+    .nav-links a {
+        color: var(--ledger-text);
+        text-decoration: none;
+        font-weight: 500;
+    }
+    
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .calculator-widget {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .how-it-works .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+    }
+    
+    .steps-content {
+        text-align: left;
+        margin-bottom: 0;
+    }
+}
